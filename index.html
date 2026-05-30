@@ -1,0 +1,253 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Maison Ignis - 滚动叙事保暖鞋官网</title>
+    <meta
+      name="description"
+      content="Maison Ignis 高端智能保暖鞋滚动叙事官网，展示恒温加热、环境感应、穿着检测与冬季生活方式。"
+    />
+    <meta property="og:title" content="Maison Ignis - Heat made quiet" />
+    <meta
+      property="og:description"
+      content="一双让冬天更温暖、更轻松、更有风格的智能保暖鞋。"
+    />
+    <meta property="og:type" content="website" />
+    <meta name="theme-color" content="#f4efe6" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="page-grain" aria-hidden="true"></div>
+    <div class="scroll-progress" aria-hidden="true"><span></span></div>
+
+    <header class="site-header">
+      <a class="brand-lockup" href="#hero" aria-label="Maison Ignis home">
+        <span class="brand-mark">
+          <img src="./assets/logo-maison-ignis.png" alt="" />
+        </span>
+        <span>Maison Ignis</span>
+      </a>
+      <nav class="nav-links" aria-label="Primary navigation">
+        <a href="#product">产品</a>
+        <a href="#function">功能</a>
+        <a href="#scenes">场景</a>
+        <a href="#access">早期访问</a>
+      </nav>
+      <a class="header-action" href="#access">Join</a>
+    </header>
+
+    <main>
+      <section class="hero story-panel" id="hero" data-stage="hero" aria-labelledby="hero-title">
+        <div class="hero-ambient" aria-hidden="true"></div>
+        <div class="hero-copy reveal">
+          <p class="eyebrow">Nordic thermal footwear / Maison Ignis 02</p>
+          <h1 id="hero-title">把冬天的温度，<span>收进一双安静的鞋。</span></h1>
+          <p>
+            大幅产品渲染、雪白针织表面与克制发光 CTA，构成第一眼的产品惊艳：
+            像 Apple 式物件，又带有北欧冬季的柔和暖意。
+          </p>
+          <div class="hero-actions">
+            <a class="primary-button" href="#product">开始滚动叙事</a>
+            <a class="ghost-button" href="#access">加入早期访问</a>
+          </div>
+        </div>
+        <figure class="hero-product reveal">
+          <img src="./assets/product-side-hero.png" alt="Maison Ignis 白色保暖鞋侧面" />
+          <figcaption>
+            <span>Heat field</span>
+            <strong>37-46 C</strong>
+          </figcaption>
+        </figure>
+      </section>
+
+      <section class="story-wrap" aria-label="Maison Ignis scroll narrative">
+        <aside class="sticky-stage" aria-label="滚动产品舞台">
+          <div class="stage-shell">
+            <div class="stage-metadata">
+              <span id="stageKicker">01 / PRODUCT REVEAL</span>
+              <strong id="stageTitle">Seamless warm shell</strong>
+            </div>
+            <img
+              id="stageImage"
+              src="./assets/product-profile.png"
+              alt="Maison Ignis 侧面产品视图"
+            />
+            <div class="thermal-overlay" aria-hidden="true"></div>
+            <div class="stage-ruler" aria-hidden="true"></div>
+          </div>
+        </aside>
+
+        <div class="story-chapters">
+          <section
+            class="chapter product-chapter"
+            id="product"
+            data-stage="product"
+            aria-labelledby="product-title"
+          >
+            <div class="chapter-copy reveal">
+              <p class="eyebrow">Module 02 / 产品展示</p>
+              <h2 id="product-title">材质先开口，技术藏在里面。</h2>
+              <p>
+                高帮袜套鞋的侧面轮廓、柔和针织纹理、隐藏式加热层一起构成了
+                Maison Ignis 的产品语言：不像装备，更像一件温暖的日用品。
+              </p>
+            </div>
+            <div class="material-grid">
+              <article class="material-card reveal">
+                <span>01</span>
+                <h3>羊毛感上覆</h3>
+                <p>用柔软触感降低技术产品的距离感，让冬季穿着更接近室内织物。</p>
+              </article>
+              <article class="material-card reveal">
+                <span>02</span>
+                <h3>麂皮式暖调</h3>
+                <p>以暖米色和石灰灰承接产品图片的柔光，避开廉价电商感。</p>
+              </article>
+              <article class="material-card reveal">
+                <span>03</span>
+                <h3>技术针织</h3>
+                <p>细密纹理包裹脚背，视觉上保持纯净，同时暗示内部热管理。</p>
+              </article>
+            </div>
+          </section>
+
+          <section
+            class="chapter function-chapter"
+            id="function"
+            data-stage="function"
+            aria-labelledby="function-title"
+          >
+            <div class="chapter-copy reveal">
+              <p class="eyebrow">Module 03 / 功能细节</p>
+              <h2 id="function-title">功能不喧哗，只在需要时发生。</h2>
+              <p>
+                文档要求的恒温加热、环境感应、穿着检测、无线充电，被整理成
+                极简功能节点。hover 时会显出说明，保持页面干净。
+              </p>
+            </div>
+            <div class="feature-orbit">
+              <button class="feature-node reveal" type="button">
+                <span>Thermo</span>
+                <strong>恒温加热</strong>
+                <em>低温环境自动维持舒适热区。</em>
+              </button>
+              <button class="feature-node reveal" type="button">
+                <span>Sense</span>
+                <strong>环境感应</strong>
+                <em>根据室内外温差调整输出节奏。</em>
+              </button>
+              <button class="feature-node reveal" type="button">
+                <span>Wear</span>
+                <strong>穿着检测</strong>
+                <em>离脚后进入低功耗待机状态。</em>
+              </button>
+              <button class="feature-node reveal" type="button">
+                <span>Dock</span>
+                <strong>无线充电</strong>
+                <em>回家放下，即完成夜间补能。</em>
+              </button>
+            </div>
+          </section>
+
+          <section
+            class="chapter scenes-chapter"
+            id="scenes"
+            data-stage="scenes"
+            aria-labelledby="scenes-title"
+          >
+            <div class="chapter-copy reveal">
+              <p class="eyebrow">Module 04 / 使用场景</p>
+              <h2 id="scenes-title">城市、咖啡馆、遛狗、雪地通勤。</h2>
+              <p>
+                现有素材以产品为主，所以场景段落采用“摄影分镜卡”的方式搭建氛围：
+                暖光、雾面玻璃、城市雪色和轻微视差，让叙事继续向生活方式推进。
+              </p>
+            </div>
+            <div class="scene-grid">
+              <article class="scene-card reveal" data-depth="0.18">
+                <img src="./assets/product-front.png" alt="Maison Ignis 鞋头视角" />
+                <span>City street</span>
+              </article>
+              <article class="scene-card reveal" data-depth="0.28">
+                <img src="./assets/product-top.png" alt="Maison Ignis 俯视视角" />
+                <span>Cafe morning</span>
+              </article>
+              <article class="scene-card reveal" data-depth="0.22">
+                <img src="./assets/product-back.png" alt="Maison Ignis 后跟视角" />
+                <span>Dog walk</span>
+              </article>
+              <article class="scene-card reveal" data-depth="0.32">
+                <img src="./assets/product-sole.png" alt="Maison Ignis 鞋底视角" />
+                <span>Snow commute</span>
+              </article>
+            </div>
+          </section>
+
+          <section
+            class="chapter feeling-chapter"
+            id="feeling"
+            data-stage="feeling"
+            aria-labelledby="feeling-title"
+          >
+            <div class="feeling-card reveal">
+              <p class="eyebrow">Module 05 / 用户体验感</p>
+              <h2 id="feeling-title">出门前不用犹豫，回家后也不急着脱下。</h2>
+              <p>
+                它强调的是舒适、温暖、日常可穿。不是户外装备的硬朗姿态，
+                而是一双能进入公寓、电梯、咖啡馆和雪地街口的冬季鞋。
+              </p>
+            </div>
+          </section>
+
+          <section
+            class="chapter value-chapter"
+            id="value"
+            data-stage="value"
+            aria-labelledby="value-title"
+          >
+            <p class="eyebrow reveal">Module 06 / 价值主张</p>
+            <h2 id="value-title" class="floating-line reveal">
+              这双鞋让冬天更温暖、更轻松、更有风格。
+            </h2>
+          </section>
+
+          <section
+            class="chapter access-chapter"
+            id="access"
+            data-stage="access"
+            aria-labelledby="access-title"
+          >
+            <div class="access-panel reveal">
+              <p class="eyebrow">Module 07 / 邮箱收集</p>
+              <h2 id="access-title">加入早期访问，抢先体验 Maison Ignis。</h2>
+              <p>
+                当前为前端原型，邮箱不会发送到服务器；后续可接入 Next.js API、
+                Google Analytics、Meta Pixel 和 UTM 追踪。
+              </p>
+              <form class="email-form" id="emailForm">
+                <label for="emailInput">Email address</label>
+                <div class="form-row">
+                  <input
+                    id="emailInput"
+                    name="email"
+                    type="email"
+                    placeholder="you@example.com"
+                    autocomplete="email"
+                    required
+                  />
+                  <button class="primary-button" type="submit">Request access</button>
+                </div>
+                <p class="form-note" id="formNote" aria-live="polite">
+                  We will keep this quiet and warm.
+                </p>
+              </form>
+            </div>
+          </section>
+        </div>
+      </section>
+    </main>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
