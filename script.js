@@ -7,43 +7,43 @@ const sceneCards = document.querySelectorAll(".scene-card");
 
 const stageMap = {
   hero: {
-    src: "./assets/product-side-hero.png",
+    src: "./assets/product-side-hero.png?v=20260531-newviews",
     alt: "Maison Ignis 侧面产品渲染",
     kicker: "00 / HERO REVEAL",
     title: "Heat made quiet",
   },
   product: {
-    src: "./assets/product-profile.png",
+    src: "./assets/product-profile.png?v=20260531-newviews",
     alt: "Maison Ignis 侧面产品视图",
     kicker: "01 / PRODUCT REVEAL",
     title: "Seamless warm shell",
   },
   function: {
-    src: "./assets/product-top.png",
+    src: "./assets/product-top.png?v=20260531-newviews",
     alt: "Maison Ignis 顶部产品视图",
     kicker: "02 / THERMAL SYSTEM",
     title: "Sensors under softness",
   },
   scenes: {
-    src: "./assets/product-front.png",
+    src: "./assets/product-front.png?v=20260531-newviews",
     alt: "Maison Ignis 鞋头产品视图",
     kicker: "03 / WINTER SCENES",
     title: "From street to cafe",
   },
   feeling: {
-    src: "./assets/product-back.png",
+    src: "./assets/product-back.png?v=20260531-newviews",
     alt: "Maison Ignis 后跟产品视图",
     kicker: "04 / DAILY FEELING",
     title: "Comfort that stays on",
   },
   value: {
-    src: "./assets/product-sole.png",
+    src: "./assets/product-sole.png?v=20260531-newviews",
     alt: "Maison Ignis 鞋底产品视图",
     kicker: "05 / VALUE LINE",
     title: "Warmth, ease, style",
   },
   access: {
-    src: "./assets/product-side-hero.png",
+    src: "./assets/product-side-hero.png?v=20260531-newviews",
     alt: "Maison Ignis 白色保暖鞋侧面",
     kicker: "06 / EARLY ACCESS",
     title: "Join the first winter",
