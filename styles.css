@@ -774,13 +774,48 @@ input {
 }
 
 @media (max-width: 720px) {
+  body {
+    background:
+      radial-gradient(circle at 72% 10%, rgba(148, 217, 232, 0.26), transparent 16rem),
+      linear-gradient(180deg, #fbf8f1 0%, #efe7d8 56%, #ded6ca 100%);
+  }
+
+  body::before {
+    background:
+      linear-gradient(90deg, transparent 0 7%, rgba(255, 255, 255, 0.52) 7% 7.26%, transparent 7.26% 100%),
+      linear-gradient(90deg, transparent 0 84%, rgba(148, 217, 232, 0.14) 84% 84.25%, transparent 84.25% 100%);
+  }
+
+  body::after {
+    opacity: 0.42;
+  }
+
   .site-header {
     top: 10px;
     width: calc(100% - 20px);
+    min-height: 56px;
+    grid-template-columns: auto auto;
   }
 
   .brand-lockup span:last-child {
     display: none;
+  }
+
+  .brand-lockup {
+    gap: 8px;
+    padding-left: 8px;
+  }
+
+  .brand-mark,
+  .brand-mark img {
+    width: 38px;
+    height: 38px;
+  }
+
+  .header-action {
+    min-height: 40px;
+    margin-right: 6px;
+    padding: 0 15px;
   }
 
   .story-panel,
@@ -794,55 +829,145 @@ input {
   }
 
   .hero {
-    gap: 28px;
-    padding-top: 100px;
-    padding-bottom: 44px;
+    gap: 20px;
+    padding-top: 92px;
+    padding-bottom: 34px;
   }
 
   .hero h1,
   .chapter h2,
   .feeling-card h2,
   .access-panel h2 {
-    font-size: 2.34rem;
+    font-size: clamp(2.15rem, 10.2vw, 2.58rem);
+  }
+
+  .hero h1 {
+    margin-top: 18px;
+    line-height: 1.02;
+  }
+
+  .hero-copy {
+    max-width: 100%;
+  }
+
+  .eyebrow {
+    font-size: 0.66rem;
+    line-height: 1.5;
+  }
+
+  .hero p:not(.eyebrow),
+  .chapter-copy p,
+  .feeling-card p,
+  .access-panel p {
+    font-size: 0.98rem;
+    line-height: 1.62;
+  }
+
+  .hero p:not(.eyebrow) {
+    margin-top: 18px;
+  }
+
+  .hero-actions {
+    margin-top: 22px;
+  }
+
+  .primary-button,
+  .ghost-button {
+    min-height: 46px;
+    padding: 0 17px;
   }
 
   .hero-ambient {
-    inset: 8% 0 6% 18%;
+    inset: 8% -4% 4% 12%;
+    opacity: 0.74;
   }
 
   .hero-product,
-  .hero-product img,
-  .stage-shell {
-    min-height: 330px;
+  .hero-product img {
+    min-height: clamp(360px, 56dvh, 430px);
+  }
+
+  .hero-product {
+    background:
+      linear-gradient(180deg, rgba(255, 255, 255, 0.64), rgba(255, 255, 255, 0.22)),
+      rgba(255, 255, 255, 0.32);
+    box-shadow: 0 28px 70px rgba(72, 60, 45, 0.13);
+  }
+
+  .hero-product::before {
+    inset: 12px;
+  }
+
+  .hero-product img {
+    object-position: center 58%;
+    transform: translate3d(calc(var(--shift-x) * 0.25), calc(var(--shift-y) * 0.25), 0) scale(1.04);
   }
 
   .hero-product figcaption {
-    left: 16px;
-    right: 16px;
-    bottom: 16px;
-    min-width: 0;
+    left: auto;
+    right: 12px;
+    bottom: 12px;
+    min-width: 138px;
+    gap: 3px;
+    padding: 10px 12px;
+    background: rgba(247, 243, 235, 0.72);
+    backdrop-filter: blur(14px);
+  }
+
+  .hero-product figcaption span {
+    font-size: 0.58rem;
+  }
+
+  .hero-product figcaption strong {
+    font-size: 1.34rem;
   }
 
   .story-wrap {
-    padding-top: 26px;
+    padding-top: 34px;
+  }
+
+  .sticky-stage {
+    margin-bottom: 18px;
+  }
+
+  .stage-shell {
+    min-height: 390px;
   }
 
   .stage-metadata {
     top: 16px;
     left: 16px;
-    right: 16px;
+    right: auto;
+    max-width: calc(100% - 32px);
+    gap: 5px;
+    padding: 10px 12px;
+  }
+
+  .stage-metadata strong {
+    font-size: 0.92rem;
   }
 
   #stageImage {
-    width: 108%;
-    max-height: 70%;
+    width: 116%;
+    max-height: 66%;
+    transform: translate(-50%, -38%) scale(1);
   }
 
   .thermal-overlay {
-    right: 8%;
-    bottom: 18%;
-    width: 62%;
-    height: 24%;
+    right: 10%;
+    bottom: 20%;
+    width: 52%;
+    height: 18%;
+    opacity: 0.34;
+    background: linear-gradient(90deg, rgba(91, 207, 232, 0.2), transparent 54%, rgba(233, 160, 100, 0.2));
+  }
+
+  .stage-ruler {
+    right: 16px;
+    bottom: 16px;
+    width: 126px;
+    height: 42px;
+    opacity: 0.34;
   }
 
   .material-grid,
@@ -855,10 +980,29 @@ input {
   .material-card,
   .feature-node {
     min-height: auto;
+    padding: 18px;
+  }
+
+  .scene-card {
+    min-height: 230px;
+  }
+
+  .scene-card img {
+    min-height: 230px;
   }
 
   .floating-line {
-    font-size: 3.1rem;
+    font-size: clamp(2.6rem, 15vw, 3.35rem);
+    line-height: 0.98;
+  }
+
+  .feeling-card,
+  .access-panel {
+    padding: 24px;
+  }
+
+  .email-form {
+    margin-top: 24px;
   }
 }
 
